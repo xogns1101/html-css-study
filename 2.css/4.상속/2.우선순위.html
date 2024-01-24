@@ -7,6 +7,19 @@
     <title>Document</title>
 </head>
 
+<!--- !important: 무한대 점
+- 인라인 스타일: 1000점
+- 아이디 선택자: 100점
+- 클래스 선택자: 10점
+- 태그 선택자: 1점
+- 전체 선택자: 0점
+- :hover, :active, :first-child와 같은 가상 클래스는 클래스 선택자로 취
+급하여 10점이 부여됨
+- ::before, ::after와 같은 가상요소는 태그선택자로 취급되어 1점이 부
+여됨
+- :not()은 점수가 0점이 부여됩니다.-->
+
+
 <style>
     #i-yellow {
         color: yellow;
@@ -14,7 +27,7 @@
 
 
     div {
-        color: red;
+        color: red !important;
         width: 200px;
     }
 
