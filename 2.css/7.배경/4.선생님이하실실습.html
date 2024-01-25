@@ -8,39 +8,51 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
+
     <style>
-        section{
-            width: 650px;
-            margin: auto;
-            
+        body {
+            font-family: '굴림체', serif;
+            font-size: 18px;
         }
-        .main-title {
-            
-            font-size: 30px;
-            margin-top: 15px;
+
+        section {
+            width: 60%;
+            margin: 30px auto 0;
+        }
+
+        section .main-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        section .content .food {
             margin-bottom: 15px;
         }
-        
-        .sub-title {
-            background-image: url(./imagis/bg_bul.gif);
-            background-repeat: no-repeat;
-            padding-left: 20px;
-            margin-left: 10px;
-            margin-top: 15px;
-            font-size: 20px;
+
+        section .content .food .sub-title {
+            background: url(./imagis/bg_bul.gif)no-repeat left;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px 20px
+
         }
         
-        p {
-            background-color: pink;
-            background-repeat: repeat-y;
-            margin: 7px;
-            padding: 10px;
-        
+        section .content .food p {
+            background: pink url(./imagis/bg_line.gif) repeat-x bottom;
+            padding: 15px 20px 35px
         }
+        
+
+
     </style>
+
 </head>
 
 <body>
+
+
 
     <section>
         <h1 class="main-title">배경실습</h1>
@@ -74,6 +86,9 @@
             </div>
         </div>
     </section>
+
+
+
 
 </body>
 
