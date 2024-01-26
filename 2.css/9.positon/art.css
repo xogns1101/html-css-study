@@ -1,0 +1,47 @@
+@import url(../../common.css);
+
+body {
+    background: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-family: '굴림', 'Gulim', serif;
+  }
+  
+  #wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  header {
+    background: #e6862c;
+    width: 900px;
+    height: 150px;
+    padding: 10px;
+    color: #fff;
+  }
+
+  header h1 {
+    font-size: 80px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+  }
+  
+  span {
+    font-size: 12px;
+    float: left;
+    padding-left: 150px;
+  }
+  h1 .stit {
+    width: auto;
+    height: 50px;
+    background: red;
+    font-size: 19px;
+    float: left;
+  }
+
+  .side-menu {
+    float: left;
+  }
