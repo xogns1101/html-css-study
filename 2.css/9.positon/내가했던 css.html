@@ -64,8 +64,8 @@ h1 .stit {
 .side-menu {
   background: white;
   float: left;
-  width: 190px;
-  height: 770px;
+  width: 170px;
+  height: 700px;
   line-height: 50px;
 }
 
@@ -75,13 +75,19 @@ h1 .stit {
     color: white;
 }
 
-.main-content {
-  width: 500px;
+.container  {
+  width: 900px;
   height: 700px;
+  border: #333;
+  background: rgb(2, 1, 1);
   float: left;
 }
+.main-content {
+  width: 900px;
+  height: 1200px;
+}
 
-.clearfix::after{
+.clearfix::after, .clearfix::before{
   content: '';
   display: block;
   clear: both;
@@ -99,32 +105,31 @@ h1 .stit {
   background: lightgray;
   color: darkblue;
   line-height: 35px;
-  font-size: 11px;
+  padding: 0px 10px 0px;
 }
 
 
 .banner {
+ position: absolute;
  background: white;
- width: 210px;
- height: 770px;
- float: left;
- position: relative;
- left: 500px;
- bottom: 700px;
- padding: 20px;
+ width: 190px;
+ height: 700px;
+ right: 180px;
+ top: 193px;
+  float: left;
 }
 .all {
-  font-size: 24px;
+  font-size: 26px;
   color: gray;
   text-decoration: underline;
 }
 .love {
-  font-size: 25px;
+  font-size: 28px;
   color: #e6862c;
   text-decoration: underline;
 }
 strong {
-  font-size: 19px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -132,7 +137,6 @@ strong {
   width: 900px;
   background: darkblue;
   color: white;
+  padding-top: 30px;
   text-align: center;
-  position: relative;
-  bottom: 700px;
  }
