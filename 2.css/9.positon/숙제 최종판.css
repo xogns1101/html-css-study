@@ -1,0 +1,148 @@
+@import url(../../common.css);
+
+body {
+    background: #666;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    font-family: '굴림', 'Gulim', serif;
+  }
+  
+  #wrapper {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background: #e6862c;
+    width: 900px;
+    height: 150px;
+    padding: 10px;
+    color: #fff;
+  }
+  
+  
+  header h1 {
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    padding-left: 10px;
+  }
+  
+  span {
+    font-size: 12px;
+    float: left;
+  }
+  
+  header .a {
+    padding-left: 140px;
+    font-size: 18px;
+  }
+  
+  li:hover {
+    text-decoration: underline;
+  }
+  
+  h1 .stit {
+    width: auto;
+    height: 50px;
+    background: red;
+    font-size: 19px;
+    float: left;
+  }
+  
+  .stit {
+    border: 1px solid black;  
+    background: lightgray;
+    width: 900px;
+    padding: 10px 150px 10px;
+    float: left;
+    color: black;
+    position: relative;
+    right: 10px;
+  }
+  
+  .side-menu {
+    background: white;
+    float: left;
+    width: 190px;
+    height: 770px;
+    line-height: 50px;
+  }
+  
+  .side-menu h3 {
+      font-size: 16px;
+      background: rgb(152, 35, 35);
+      color: white;
+  }
+  
+  .main-content {
+    width: 500px;
+    height: 700px;
+    float: left;
+  }
+  
+  .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  
+  .title {
+    background: darkblue;
+    color: white;
+    font-weight: bold ;
+    padding-left: 20px;
+    font-size: 24px;
+  }
+  .art-piece {
+    background: lightgray;
+    color: darkblue;
+    line-height: 35px;
+    font-size: 11px;
+  }
+  
+  
+  .banner {
+   background: white;
+   width: 210px;
+   height: 770px;
+   float: left;
+   position: relative;
+   left: 500px;
+   bottom: 700px;
+   padding: 20px;
+  }
+  .all {
+    font-size: 24px;
+    color: gray;
+    text-decoration: underline;
+  }
+  .love {
+    font-size: 25px;
+    color: #e6862c;
+    text-decoration: underline;
+  }
+  strong {
+    font-size: 19px;
+    font-weight: bold;
+  }
+  
+   footer {
+    width: 900px;
+    background: darkblue;
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 700px;
+   }
+  
+   ul li:hover {
+    text-decoration: underline;
+   }
+   ul li {
+    line-height: 25px;
+    padding: 30px 0px 0px 10px;
+   }
