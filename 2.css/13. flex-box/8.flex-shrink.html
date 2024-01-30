@@ -7,24 +7,48 @@
 
     <style>
         .container {
-            height: 400px;
+            height: 300px;
             border: 4px solid #000;
             display: flex;
             align-items: center;
         }
-
+        
         .item {
-            width: 150px;
+            width: 200px;
             height: 100px;
             background: red;
             border: 4px dashed orange;
             border-radius: 10px;
             font-size: 40px;
+            
+
+            /*박스 요소 내부 정중앙 배치*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
+
+        /*
+        item들을 감싸고 있는 container의 너비가 줄어들게 되면
+        안쪽에 있는 item들도 너비가 줄어들어야 합니다. (shrink 는 flex-wrap이 nowrap일 경우에만 동작합니다.)
+        container가 표현하지 못한 item들의 총 길이만큼 비율대로 가져가게 됩니다.
+        ex) container의 크기가 300px, item들의 총 너비가 400px일 경우, 표현하지 못한 부분은 100px.
+        저 100px의 크기를 flex-shrink 속성으로 부여한 값만큼 비율적으로 줄어들게 됩니다.
+        flex-shrink: 3 -> 100/4 *3 = 75px만큼 줄어들어야함.
+        flex-shrink: 1 -> 100/4 *1 = 25px만큼 줄어들어야함.
+        
+        flex-basis를 설정하면 자체 width와 상관없이 지정한 basis값의 width를 가지게 됩니다.
+        비율적으로 동일하게 줄어드는 너비를 설정하고 싶으면 auto 혹은 basis를 설정하지 않습니다.
+        */
         
         .item1 {
-            flex-basis: 200px;
-            flex-shrink: 2;
+           /* flex-basis: 300px;
+            flex-shrink: 2; */
+            
+            /* flex: grow shrink basis 
+            default: grow -> 1, shrink -> 0, basis -> 0
+            */
+            flex: 1 2 300px;
         }
 
         .item2 {
@@ -40,8 +64,8 @@
 <body>
     
     <div class="container">
-        <div class="item item1"></div>
-        <div class="item item2"></div>
+        <div class="item item1">A</div>
+        <div class="item item2">B</div>
     </div>
 
 
